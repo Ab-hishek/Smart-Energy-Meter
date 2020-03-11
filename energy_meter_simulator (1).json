@@ -1,0 +1,499 @@
+{
+  "title": "Energy meter Simulator",
+  "configuration": {
+    "description": "Simulator",
+    "widgets": {
+      "e08632b3-7c03-082b-68b6-6bdcaf1d865c": {
+        "isSystemType": true,
+        "bundleAlias": "control_widgets",
+        "typeAlias": "knob_control",
+        "type": "rpc",
+        "title": "New widget",
+        "sizeX": 3,
+        "sizeY": 3,
+        "config": {
+          "targetDeviceAliases": [],
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "0px",
+          "settings": {
+            "requestTimeout": 500,
+            "maxValue": 10,
+            "minValue": 0,
+            "getValueMethod": "getUserNo",
+            "initialValue": 0,
+            "title": "USER INPUT",
+            "setValueMethod": "setUserNo"
+          },
+          "title": "USERS",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "widgetStyle": {},
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "actions": {},
+          "decimals": 0,
+          "datasources": [],
+          "enableDataExport": true,
+          "targetDeviceAliasIds": [
+            "6f543dcd-3a71-3b3d-ec20-dd6290c13b18"
+          ]
+        },
+        "id": "e08632b3-7c03-082b-68b6-6bdcaf1d865c"
+      },
+      "6259b4b4-049c-c182-522b-13ad318b7758": {
+        "isSystemType": true,
+        "bundleAlias": "control_widgets",
+        "typeAlias": "knob_control",
+        "type": "rpc",
+        "title": "New widget",
+        "sizeX": 3,
+        "sizeY": 3,
+        "config": {
+          "targetDeviceAliases": [],
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "0px",
+          "settings": {
+            "requestTimeout": 500,
+            "maxValue": 12,
+            "title": "kW/h",
+            "getValueMethod": "getInterval",
+            "minValue": 0,
+            "initialValue": 0,
+            "setValueMethod": "setInterval"
+          },
+          "title": "INTERVAL",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "widgetStyle": {},
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "actions": {},
+          "decimals": 0,
+          "datasources": [],
+          "enableDataExport": true,
+          "targetDeviceAliasIds": [
+            "6f543dcd-3a71-3b3d-ec20-dd6290c13b18"
+          ]
+        },
+        "id": "6259b4b4-049c-c182-522b-13ad318b7758"
+      },
+      "1fe9bd59-15a0-83de-8e46-a987357e8696": {
+        "isSystemType": true,
+        "bundleAlias": "control_widgets",
+        "typeAlias": "knob_control",
+        "type": "rpc",
+        "title": "New widget",
+        "sizeX": 3,
+        "sizeY": 3,
+        "config": {
+          "targetDeviceAliases": [],
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "0px",
+          "settings": {
+            "requestTimeout": 500,
+            "minValue": 0,
+            "title": "MONTHS",
+            "getValueMethod": "getDuration",
+            "setValueMethod": "setDuration",
+            "maxValue": 3,
+            "initialValue": 0
+          },
+          "title": "DURATION",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "widgetStyle": {},
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "actions": {},
+          "decimals": 0,
+          "datasources": [],
+          "enableDataExport": true,
+          "targetDeviceAliasIds": [
+            "6f543dcd-3a71-3b3d-ec20-dd6290c13b18"
+          ]
+        },
+        "id": "1fe9bd59-15a0-83de-8e46-a987357e8696"
+      },
+      "84ba20c2-311e-46dc-f978-56704be0f1ef": {
+        "isSystemType": false,
+        "bundleAlias": "hvac_sim_widgets",
+        "typeAlias": "report",
+        "type": "static",
+        "title": "New widget",
+        "sizeX": 9,
+        "sizeY": 5,
+        "config": {
+          "datasources": [],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "cardHtml": "<div class='card'>HTML code here</div>",
+            "cardCss": ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}"
+          },
+          "title": "New Report",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "enableDataExport": true,
+          "widgetStyle": {},
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "actions": {}
+        },
+        "id": "84ba20c2-311e-46dc-f978-56704be0f1ef"
+      },
+      "090c1c18-e2f3-4c9f-ec36-234ae548114d": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "timeseries_table",
+        "type": "timeseries",
+        "title": "New widget",
+        "sizeX": 8,
+        "sizeY": 8,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "LCLid",
+                  "type": "timeseries",
+                  "label": "LCLid",
+                  "color": "#2196f3",
+                  "settings": {
+                    "useCellStyleFunction": false,
+                    "cellStyleFunction": "",
+                    "useCellContentFunction": false,
+                    "cellContentFunction": ""
+                  },
+                  "_hash": 0.9357404305055694
+                },
+                {
+                  "name": "energy",
+                  "type": "timeseries",
+                  "label": "energy",
+                  "color": "#4caf50",
+                  "settings": {
+                    "useCellStyleFunction": false,
+                    "cellStyleFunction": "",
+                    "useCellContentFunction": false,
+                    "cellContentFunction": ""
+                  },
+                  "_hash": 0.23842497126794293
+                },
+                {
+                  "name": "Timestamp",
+                  "type": "timeseries",
+                  "label": "Timestamp",
+                  "color": "#f44336",
+                  "settings": {
+                    "useCellStyleFunction": false,
+                    "cellStyleFunction": "",
+                    "useCellContentFunction": false,
+                    "cellContentFunction": ""
+                  },
+                  "_hash": 0.2196933173487159
+                }
+              ],
+              "entityAliasId": "e9795d73-a4c9-48fd-6ea9-d869c29f01b7"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "interval": 1000,
+              "timewindowMs": 18000000
+            },
+            "aggregation": {
+              "type": "NONE",
+              "limit": 200
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "showTimestamp": true,
+            "displayPagination": true,
+            "defaultPageSize": 10
+          },
+          "title": "Energy Timeseries table",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": false,
+          "showLegend": false,
+          "widgetStyle": {},
+          "actions": {},
+          "enableDataExport": false
+        },
+        "id": "090c1c18-e2f3-4c9f-ec36-234ae548114d"
+      },
+      "1abf9d44-ec6e-6af3-13b8-d38aa50ee82e": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "basic_timeseries",
+        "type": "timeseries",
+        "title": "New widget",
+        "sizeX": 13,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "energy",
+                  "type": "timeseries",
+                  "label": "energy",
+                  "color": "#f44336",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "tooltipValueFormatter": "",
+                    "showSeparateAxis": false,
+                    "axisTitle": "",
+                    "axisPosition": "left",
+                    "axisTicksFormatter": ""
+                  },
+                  "_hash": 0.9900884359459694
+                },
+                {
+                  "name": "LCLid",
+                  "type": "timeseries",
+                  "label": "LCLid",
+                  "color": "#4caf50",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "tooltipValueFormatter": "",
+                    "showSeparateAxis": false,
+                    "axisTitle": "",
+                    "axisPosition": "left",
+                    "axisTicksFormatter": ""
+                  },
+                  "_hash": 0.40348127912536125
+                },
+                {
+                  "name": "Timestamp",
+                  "type": "timeseries",
+                  "label": "Timestamp",
+                  "color": "#651fff",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "tooltipValueFormatter": "",
+                    "showSeparateAxis": false,
+                    "axisTitle": "",
+                    "axisPosition": "left",
+                    "axisTicksFormatter": ""
+                  },
+                  "_hash": 0.2324124135010066
+                }
+              ],
+              "entityAliasId": "e9795d73-a4c9-48fd-6ea9-d869c29f01b7"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "shadowSize": 4,
+            "fontColor": "#545454",
+            "fontSize": 10,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "min": 0,
+              "max": 1.5
+            },
+            "grid": {
+              "color": "#545454",
+              "tickColor": "#DDDDDD",
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1
+            },
+            "stack": false,
+            "tooltipIndividual": true,
+            "smoothLines": true
+          },
+          "title": "Energy-Flot",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileHeight": null,
+          "enableDataExport": false,
+          "widgetStyle": {},
+          "useDashboardTimewindow": true,
+          "showLegend": true,
+          "actions": {}
+        },
+        "id": "1abf9d44-ec6e-6af3-13b8-d38aa50ee82e"
+      }
+    },
+    "states": {
+      "default": {
+        "name": "Energy meter Simulator",
+        "root": true,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "e08632b3-7c03-082b-68b6-6bdcaf1d865c": {
+                "sizeX": 3,
+                "sizeY": 3,
+                "row": 0,
+                "col": 0
+              },
+              "6259b4b4-049c-c182-522b-13ad318b7758": {
+                "sizeX": 3,
+                "sizeY": 3,
+                "row": 0,
+                "col": 3
+              },
+              "1fe9bd59-15a0-83de-8e46-a987357e8696": {
+                "sizeX": 3,
+                "sizeY": 3,
+                "row": 0,
+                "col": 6
+              },
+              "84ba20c2-311e-46dc-f978-56704be0f1ef": {
+                "sizeX": 9,
+                "sizeY": 5,
+                "row": 3,
+                "col": 13
+              },
+              "090c1c18-e2f3-4c9f-ec36-234ae548114d": {
+                "sizeX": 8,
+                "sizeY": 8,
+                "row": 8,
+                "col": 0
+              },
+              "1abf9d44-ec6e-6af3-13b8-d38aa50ee82e": {
+                "sizeX": 13,
+                "sizeY": 5,
+                "mobileHeight": null,
+                "row": 3,
+                "col": 0
+              }
+            },
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "color": "rgba(0,0,0,0.870588)",
+              "columns": 24,
+              "margins": [
+                10,
+                10
+              ],
+              "backgroundSizeMode": "100%"
+            }
+          }
+        }
+      }
+    },
+    "entityAliases": {
+      "6f543dcd-3a71-3b3d-ec20-dd6290c13b18": {
+        "id": "6f543dcd-3a71-3b3d-ec20-dd6290c13b18",
+        "alias": "RPC",
+        "filter": {
+          "type": "singleEntity",
+          "resolveMultiple": false,
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "62e5d6e0-fe66-11e9-879b-b9b6407e5998"
+          }
+        }
+      },
+      "e9795d73-a4c9-48fd-6ea9-d869c29f01b7": {
+        "id": "e9795d73-a4c9-48fd-6ea9-d869c29f01b7",
+        "alias": "Energy",
+        "filter": {
+          "type": "deviceType",
+          "resolveMultiple": true,
+          "deviceType": "Simulator",
+          "deviceNameFilter": "energy"
+        }
+      },
+      "fba34efa-7c72-0c0a-a882-9c9a46c26c1a": {
+        "id": "fba34efa-7c72-0c0a-a882-9c9a46c26c1a",
+        "alias": "smart energy meter",
+        "filter": {
+          "type": "deviceType",
+          "resolveMultiple": true,
+          "deviceType": "Simulator",
+          "deviceNameFilter": "energy"
+        }
+      }
+    },
+    "timewindow": {
+      "history": {
+        "fixedTimewindow": {
+          "startTimeMs": 1572462415781,
+          "endTimeMs": 1573236415779
+        },
+        "interval": 1547999.996
+      },
+      "aggregation": {
+        "type": "AVG",
+        "limit": 25000
+      }
+    },
+    "settings": {
+      "stateControllerId": "entity",
+      "showTitle": false,
+      "showDashboardsSelect": true,
+      "showEntitiesSelect": true,
+      "showDashboardTimewindow": true,
+      "showDashboardExport": true,
+      "toolbarAlwaysOpen": true
+    }
+  },
+  "name": "Energy meter Simulator"
+}
